@@ -1,11 +1,11 @@
 use std::io;
 use rand::Rng;
-use rand::distributions::Uniform;
 use std::cmp::Ordering;
+// use rand::distributions::Uniform;
 
 fn main() {
-    let val = rand::thread_rng().sample(Uniform::new_inclusive(1, 100));
-    println!("A uniformly random number is: {}", val);
+    // let val = rand::thread_rng().sample(Uniform::new_inclusive(1, 100));
+    // println!("A uniformly random number is: {}", val);
 
     println!("Guess the number!");
 
