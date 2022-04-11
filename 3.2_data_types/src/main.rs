@@ -66,9 +66,28 @@ fn main() {
 
     // arrays
     let _a = [1, 2, 3, 4, 5];
-    let _months = ["January", "February", "March", "April", "May", "June", "July",
-                "August", "September", "October", "November", "December"];
+    let _months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
     let _a: [i32; 5] = [1, 2, 3, 4, 5];
-    let _a = [3; 5];
-    let _second = _a[1];
+    let _b = [3; 5];
+    let _c: [u8; 5] = [42; 5];
+    let d = [4, 5, 6, 7, 8];
+    let second = d[1];
+    println!("Second element of d is {}", second);
+
+    // Fails at compile time because this will panic at runtime
+    // let out_of_bounds = d[5];
+    // println!("Somehow found a number: {}", out_of_bounds);
 }
